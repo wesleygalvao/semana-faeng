@@ -261,10 +261,12 @@
     <!-- /.container-fluid -->
     <!-- /.navbar-wrapper -->
     <!-- Carousel -->
-    <div class="carousel slide" id="evento" data-interval="false">
+    <div class="img-responsive" id="evento" data-interval="false">
       <div class="carousel-inner">
-        <div class="item active">
-          <img src="img\FAENG_logo_evento.png" alt="">
+        <div class="img-responsive">
+          <p class="text-center">
+          <img src="img\FAENG_logo_evento.png" width="1024" height="636"  alt="Imagem Responsiva">
+          </p>
           <div class="container-fluid"></div>
         </div>
       </div>
@@ -279,41 +281,40 @@
     <!-- Wrap the rest of the page in another container-fluid to center all
     the content. -->
     <div class="container-fluid marketing">
-      <!-- Three columns of text below the carousel -->
-      <div class="row-fluid">
-        <div class="span4">
-          <img class="img-circle" src="http://lorempixel.com/g/200/200/people">
-          <h2>Palestrante 1</h2>
-          <p>Descrição&nbsp;</p>
-          <p>
-            <a class="btn" href="#">View details »</a>
-          </p>
-        </div>
-        <!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://lorempixel.com/g/200/200/people">
-          <h2>Palestrante 2</h2>
-          <p>Descrição</p>
-          <p>
-            <a class="btn" href="#">View details »</a>
-          </p>
-        </div>
-        <!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://lorempixel.com/g/200/200/people">
-          <h2>Palestrante 3</h2>
-          <p>Descrição</p>
-          <p>
-            <a class="btn" href="#">View details »</a>
-          </p>
-        </div>
-        <!-- /.span4 -->
-      </div>
       <!-- /.row -->
       <!-- START THE FEATURETTES -->
       <hr class="featurette-divider">
       <div class="featurette">
-        <img class="featurette-image pull-right" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxFx_Tr9klvSPoG_NSVKpXKl7H5hGU-HynMX7DcAMgRg5b5udO">
+        <div id="concursos" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#concursos" data-slide-to="0" class="active"></li>
+			<li data-target="#concursos" data-slide-to="1"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner img-responsive" role="listbox">
+			<div class="item active">
+			  <img src="img/concurso1.jpg" width="1024" height="636"  alt="concurso">
+			</div>
+
+			<div class="item">
+			  <img src="img/concurso2.jpg" width="1024" height="636" alt="concurso">
+			</div>
+
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#concursos" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only"><</span>
+		  </a>
+		  <a class="right carousel-control" href="#concursos" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">></span>
+		  </a>
+		</div>
+		<!--<img class="featurette-image pull-right" src="img/concurso.jpg">-->
         <h2 class="featurette-heading">Concursos.
           <span class="muted">Desafie-se.</span>
         </h2>
@@ -321,11 +322,42 @@
       </div>
       <hr class="featurette-divider">
       <div class="featurette">
-        <img class="featurette-image pull-left" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxQkv1CyYAPDdTVYRurgristbIoJNSlfwjAdRNGYwvKpCAqFBm">
+        <img class="featurette-image pull-left" src="img/minicurso.jpg">
         <h2 class="featurette-heading">Minicurso.
           <span class="muted">Oficinas.</span>
         </h2>
-        <p class="lead">Aprimore suas habilidades vinculando seus conhecimentos academicos com o mercado de trabalho.</p>
+        <p class="lead">Estes são os minicursos já programados para a II Semana da FAENG. Ainda vem mais por aí.
+			<br>Todos serão gratuitos.
+			<br>Escolha no momento da inscrição
+			<br>1. 40 Fórmulas Mais Utilizadas no Excel
+			<br>2. Acessibilidade
+			<br>3. Análise de estabilidade de muro de contenção em gabiões utilizando o Método do Equilíbrio Limite
+			<br>4. Atribuições Profissionais de um Tecnólogo
+			<br>5. CESG - Projetos de Rede de Esgotos
+			<br>6. Como Investir na Bolsa de Valores
+			<br>7. Controladores Lógico Programáveis - CLPs
+			<br>8. Delimitação de bacias hidrográficas com software livre
+			<br>9. Desenvolvimento de Aplicativos para Android - Aplicação em Automação Residencial - Parte 1
+			<br>10. Desenvolvimento de Aplicativos para Android - Aplicação em Automação Residencial - Parte 2
+			<br>11. Desenvolvimento de materiais porosos pelo método de sacrifício e avaliação de suas propriedades mecânicas
+			<br>12. Eberick
+			<br>13. Elaboração de Projetos de Educação Ambienta SISLA e SIRIEMA - Sistemas de Licenciamento Ambiental
+			<br>14. Engenharia do Entretenimento
+			<br>15. EPANET - simulador de redes de abastecimento de água
+			<br>16. Financeirização da produção: impactos regionais na expansão de parcerias público-privadas, conglomerados internacionais e nacionais
+			<br>17. Fotografia 
+			<br>18. GPS 
+			<br>19. Indices de Qualidade da Água
+			<br>20. Licenciamento e Estudos Ambientais
+			<br>21. Metodologia Ágil de Gerenciamento de Projetos: SCRUM
+			<br>22. Métodos Numéricos aplicados à Engenharia Civil
+			<br>23. MS Project 
+			<br>24. Projeto de Energia Solar Fotovoltaica
+			<br>25. Projetos de Drenagem Urbana
+			<br>26. Quer Empreender? Incube sua empresa
+			<br>27. SF Formas - Sistema construtivo modular
+			<br>28. SISLA e SIRIEMA - Sistemas de Licenciamento Ambiental
+			<br>29. Sketchup</p>
       </div>
       <hr class="featurette-divider">
       <div class="featurette">
@@ -333,7 +365,10 @@
         <h2 class="featurette-heading">Trabalho acadêmico.
           <span class="muted">Checkmate.</span>
         </h2>
-        <p class="lead">Apresentações de trabalhos acadêmicos. Submeta o seu trabalho seguindo este <a href="/donwload/Modelo_80x120.pptx" download> modelo</a>.</p>
+        <p class="lead">Se você tem algum trabalho acadêmico resultado de um experimento, pesquisa, TCC ou disciplina que seja interessante, poderá apresentar na II Semana Acadêmica da FAENG.
+Neste evento não podem participar alunos de fora da FAENG.
+Os autores se revezarão ao longo do dia para apresentar seus trabalhos.
+O banner deverá ser impresso em papel e fixado em local ainda a ser definido, com fita adesiva (não pode usar cola), um ao lado do outro, na mesma altura, a cerca de 1m do piso. <a href="https://drive.google.com/file/d/0B8UNt2P3O0WOQTh5UmhpOG9zaXM/view?usp=sharing"> Modelo</a>.</p>
       </div>
       <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
@@ -341,7 +376,7 @@
     <!--Programacao-->
     <div class="section" id="programacao">
       <div class="container">
-        <h2>Programação</h2>
+        <a href="https://drive.google.com/file/d/0B8UNt2P3O0WOdHRzRUlXZ3hrSDg/view?usp=sharing"><h2>Programação</h2></a>
         <div class="row">
           <ul class="nav nav-tabs">
             <li class="active">
@@ -393,25 +428,16 @@
                 <li>
                   <a href="#visita-quinta" data-toggle="tab">Visita Técnica</a>
                 </li>
-                <li>
-                  <a href="#concurso-quinta" data-toggle="tab">Concurso</a>
-                </li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="false">Sexta <br>10/06/2016 <i class="fa fa-caret-down"></i></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="#palestra-sexta" data-toggle="tab">Palestra</a>
+                  <a href="#trabalho-sexta" data-toggle="tab">Trabalho acadêmico</a>
                 </li>
                 <li>
-                  <a href="#minicurso-sexta" data-toggle="tab">Mini Curso</a>
-                </li>
-                <li>
-                  <a href="#visita-sexta" data-toggle="tab">Visita Técnica</a>
-                </li>
-                <li>
-                  <a href="#concurso-sexta" data-toggle="tab">Concurso</a>
+                  <a href="#campeonato-sexta" data-toggle="tab">Campeonato</a>
                 </li>
               </ul>
             </li>
@@ -440,7 +466,11 @@
                   <tr>
                     <td>NOITE
                       <br>19:00 às 20:30</td>
-                    <td>Palestra Geral</td>
+                    <td>Tema - A definir
+						<br>Palestrante: A definir
+						<br>Local: Teatro Glaude Rocha
+						<br>19h30 às 20h30
+						<br>nº vagas: 800</td>
                   </tr>
                 </tbody>
               </table>
@@ -455,49 +485,136 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 12:00</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="9" style="text-align:center;">MANHÃ</td>
+                  </tr>
+				  <tr>
+                    <td>8:00</td>
+                    <td rowspan="2" colspan="8">SISTEMA DE TRANSMISSÃO DE TV E INTERATIVIDADE NA TV DIGITAL
+						<br>Palestrante: Eng. Eletricista Ricardo Camilo
+						(TV Morena)
+						<br>8h00 às 10h:00
+						<br>Local: Bloco 7 - Anfiteatro 1
+						<br>Nº vagas: 80</td>
+                    
+                  </tr>
+				  <tr>
+                    <td>9:00</td>
+                    
+                  </tr>
+				  <tr>
+                    <td>10:00</td>
+                    <td rowspan="2" colspan="8">Instalações Elétricas
+						Residenciais - Soluções
+						<br>Palestrante
+						Eng. Eletricista Leandro
+						Henrique Nogueira (TIGRE)
+						<br>10h00 às 12h:00
+						<br>Local: Bloco 7 - Anfiteatro 1
+						<br>Nº vagas: 80</td>
+                    
+                  </tr>
+				  <tr>
+                    <td>11:00</td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <br>12:00</td>
+                    <td colspan="8" rowspan="2"  style="text-align:center;"><b></b></td>
+                  </tr>
+				  <tr>
+                    <td>13:00</td>
+                  </tr>
+				  <tr>
+                    <td colspan="9" bgcolor="DarkGray" style="text-align:center;"> <font color="white">TARDE</font></td>
                   </tr>
                   <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>14:00</td>
+                    <td rowspan="2" colspan="8">Palestra
+						SOLOS FINOS LATERÍTICOS
+						<br>Palestrante:
+						Paulo Serra (LENC Engenharia)
+						<br>14h às 16h
+						<br>Local: Multiuso 1
+						<br>Nº vagas: 215</td>
+                  </tr>
+				  <tr>
+                    <td>15:00</td>
+                  </tr>
+				  <tr>
+                    <td >16:00</td>
+					<td colspan="8"></td>
+                    
+                  </tr>
+				  <tr>
+                    <td>17:00</td>
+                    <td colspan="8"></td>
+                  </tr>
+				  <tr>
+                    <td colspan="9" bgcolor="DarkGray" style="text-align:center;"> <font color="white">NOITE</font></td>
                   </tr>
                   <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>"Palestra SOLUÇÃO EM ENGENHARIA HIDRÁULICA E GEOTÉCNICA Palestrante ENG.
-                      SILVIO Local:"</td>
-                    <td>"Palestra TURISMO INDUSTRIAL Palestrante FERNANDO BONÍSIO / RESPONSÁVEL
-                      TURISMO INDUSTRIAL SÃO BERNARDO DO CAMPO - SP Local:"</td>
-                    <td>"Palestra SISTEMA DE TRANSMISSÃO DE TV E INTERATIVIDADE NA TV DIGITAL
-                      Palestrante ENG, ELETRICISTA RICARDO CAMILO (TV MORENA) Local:"</td>
-                    <td>"Palestra GEOGRAFIA Palestrante Local:"</td>
-                    <td>"Palestra ATRIBUIÇÕES PROFISSIONAIS - CREA Palestrante VINICIUS BATTISTELLI
-                      Local:"</td>
+                    <td>18:30</td>
+                    <td>O uso do biogás dos dejetos de
+						suínos
+						<br>Instrutor: Marco Aurélio Cândia
+						Braga
+						<br>19h30min às 20h30min
+						<br>Local: Sala 504 Bloco 7A
+						<br>Nº vagas: 80</td>
+                    <td>PRÁTICA DE SISTEMAS
+						FOTOVOLTAICOS
+						CONECTADOS À REDE
+						<br>Palestrante
+						Felipe de Oliveira de Araujo
+						<br>20h às 21h
+						<br>Local: Bloco 7 - Anfiteatro 2</td>
+                    <td>ARQUITETURA E
+						ENGENHARIAS
+						BRASILEIRAS - MESCLANDO
+						<br>Palestrante
+						Eng. Marcelo Libeskind
+						<br>18h30 às 20h:30
+						<br>Local: Auditorio da Arquitetura</td>
+                    <td>SOLUÇÃO EM ENGENHARIA
+						HIDRÁULICA E
+						GEOTÉCNICA
+						<br>Palestrante
+						Eng. Silvio
+						<br>18h30 às 19h:30
+						<br>Local: Bloco 7 Sala 504</td>
+                    <td>TURISMO INDUSTRIAL
+						<br>Palestrante
+						Fernando Bonísio / Responsável
+						Turismo Industrial São
+						Bernardo do Cmapo -SP
+						<br>18h30 às 19h:30
+						<br>Local: Multiuso 1</td>
+                    <td>Palestra
+						GEOGRAFIA
+						<br>Palestrante
+						<br>18h30 às 19h:30
+						<br>Local:</td>
+                    <td>ATRIBUIÇÕES
+						PROFISSIONAIS - CREA
+						<br>Palestrante
+						Vinicius Batisttelli
+						<br>18h30 às 19h:30
+						<br>Local: Bloco 7 - Sala 506</td>
+                    <td>conhecimento científico: sua
+						aplicação e seus benefícios
+						<br>Instrutor: Marco Aurélio Arruda
+						Cortez
+						<br>20h30min às 21h30min
+						<br>Local: Sala 504 Bloco 7A
+						<br>Nº vagas: 80</td>
                   </tr>
+				  <tr>
+					<td>19:30</td>
+                    <td colspan="8" style="text-align:center;">PALESTRA GERAL - "Palestra Jovens Profissionais 19h30 às 20h30"</td>
+				  </tr>
                   <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td colspan="8">PALESTRA GERAL - "Palestra Jovens Profissionais 19h30 às 20h30"</td>
+                    <td>20:30</td>
+                    <td colspan="8"></td>
                   </tr>
                 </tbody>
               </table>
@@ -510,49 +627,118 @@
                   
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 12:00</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>"Lean Construction. Práticas da Gestão da Cadeia de Suprimentos (GCS)
-                      na construção civil Instrutor: Prof. Rodolfo Benedito Local: Nº vagas:"</td>
-                    <td>"MS Project Instrutor: Múltipla Jr. Local: Bloco 7A sala 12 Nº vagas:
-                      35"</td>
-                    <td></td>
-                    <td></td>
-                    <td>"Projetos de Drenagem Urbana Instrutor: Ênio Shinma Local: Nº vagas: 30"</td>
+				  <tr>
+                    <td colspan="7"  style="text-align:center;"> MANHÃ</td>
                   </tr>
                   <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
+                    <td>8:00</td>
+                    <td rowspan="4">MS Project
+						<br>Instrutor: Múltipla Jr.
+						<br>8:00 às 12:00
+						<br>Local: Bloco 7A sala 12
+						<br>Nº vagas: 35</td>
+                    <td rowspan="4">
+						Projetos de Drenagem Urbana
+						<br>Instrutor: Ênio Shinma
+						<br>Local: Bloco 7 - sala 505
+						<br>Nº vagas: 30</td>
+                    <td rowspan="4">Sketchup
+						<br>Instrutor: Eduardo Alcantú
+						<br>Local: Multiuso - Sala 18
+						<br>Nº vagas: 40
+						<br>Obs: Os participantes devem
+						trazer seu notebook</td>
                     <td></td>
                     <td></td>
-                    <td>"O uso do biogás dos dejetos de suínos Instrutor: Marco Aurélio Cândia
-                      Braga Local: Nº vagas: 80"</td>
-                    <td>"Análise de estabilidade de muro de contenção em gabiões utilizando o
-                      Método do Equilíbrio Limite Instrutor: Eng. Silvio Local: Nº vagas:"</td>
-                    <td>"40 Fórmulas Mais Utilizadas no Excel Instrutor: Múltipla Jr. Local: Bloco
-                      7A sala 12 Nº vagas: 35"</td>
-                    <td>"Desenvolvimento de Aplicativos para Android - Aplicação em Automação
-                      Residencial - Parte 1 Instrutor: Janderson Local: Nº de vagas: 20"</td>
                     <td></td>
-                    <td>"EPANET - Simulação de Redes de Aproveitamento de Água Instrutor: Fábio
-                      Veríssimo Local: Nº vagas: 30"</td>
+                  </tr>
+				  <tr>
+                    <td>9:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+				  <tr>
+                    <td>10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+				  <tr>
+                    <td>11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                  </tr>
+				  <tr>
+                    <td>12:00</td>
+                    <td colspan="6"></td>
+                  </tr>
+				  <tr>
+                    <td colspan="7" style="text-align:center;"> TARDE</td>
                   </tr>
                   <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td></td>
-                    <td></td>
-                    <td>"O conhecimento científico: sua aplicação e seus benefícios Instrutor:
-                      Marco Aurélio Arruda Cortez Local: Nº vagas: 80"</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>14:00</td>
+                    <td rowspan="4">Financeirização da produção:
+						impactos regionais na expansão
+						de parcerias público-privadas,
+						conglomerados internacionais e
+						nacionais
+						<br>Instrutor: Prof. Marcio Rogério
+						Silva (UFGD)
+						<br>Local: Multiuso - Sala 18
+						<br>Nº vagas: 40</td>
+                    <td rowspan="4">Desenvolvimento de materiais
+						porosos pelo método de sacrifício
+						e avaliação de suas propriedades
+						mecânicas
+						<br>Instrutor: Wagner da Silveira
+						(UFGD)
+						<br>Local: Multiuso - Sala 17
+						<br>Nº VAGAS: 40</td>
+                    <td rowspan="4">Análise de estabilidade de muro
+						de contenção em gabiões
+						utilizando o Método do
+						Equilíbrio Limite
+						<br>Instrutor: Eng. Silvio
+						<br>Local: Bloco 7 - sala 504
+						<br>Nº vagas:</td>
+                    <td rowspan="4">40 Fórmulas Mais Utilizadas no
+						Excel
+						<br>Instrutor: Múltipla Jr.
+						<br>Local: Bloco 7A sala 12
+						<br>Nº vagas: 35</td>
+                    <td rowspan="4">Desenvolvimento de Aplicativos
+						para Android - Aplicação em
+						Automação Residencial - Parte 1
+						<br>Instrutor: Janderson
+						<br>Local: a definir
+						<br>Nº de vagas: 20</td>
+                    <td rowspan="4">EPANET - Simulação de Redes
+						de Aproveitamento de Água
+						<br>Instrutor: Fábio Veríssimo
+						<br>Local: a definir
+						<br>Nº vagas: 30</td>
+                  </tr>
+				  <tr>
+                    <td>15:00</td>
+                    
+                    
+                  </tr>
+				  <tr>
+                    <td>16:00</td>
+                    
+                    
+                  </tr>
+				  <tr>
+                    <td>17:00</td>
+                    
+                    
+                  </tr>
+				  <tr>
+                    <td>18:00</td>
+                    <td colspan="6"></td>
                   </tr>
                 </tbody>
               </table>
@@ -566,57 +752,89 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>"Escola Pau - Brasil Responsável: Stephan Hofmann Local: Rua Miraí 700,
-                      Campo Grande - MS, 79070-050"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>"Águas Guariroba - Centro de Controle e Operação Responsável: Peter N°
-                      vagas: 50 Local: Rua Antônio Maria Coelho, n° 5.401 - Santa Fé"</td>
+                    <td colspan="4" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>"Dale Sorvetes Responsável: Guilherme Costa Local: R. Caxias do Sul, 641
-                      - Cel. Antonino, Campo Grande - MS, 79011-340"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>"Estação de Tratamento de Esgotos Imbirussú Responsável: Keila Roberta
-                      N° vagas: 50 Local: Rua Muxeque Chinzarian - Centro"</td>
+				  <tr>
+                    <td>8:00</td>
+                    <td rowspan="4">Escola Pau - Brasil
+						Responsável: Stephan Hofmann
+						Local: Rua Miraí 700, Campo
+						Grande - MS, 79070-050</td>
+                    <td rowspan="4">Águas Guariroba - Centro de
+						Controle e Operação
+						Responsável: Peter
+						N° vagas: 50
+						Local: Rua Antônio Maria
+						Coelho, n° 5.401 - Santa Fé</td>
+                    <td rowspan="4">FENSA Coca Cola (Aguardando
+						aprovação diretoria)
+						Responsável: Priscila/Giovanni
+						N° vagas: 20</td>
+                   
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+                    <td>9:00</td>
+                    
+                   
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+                    <td>10:00</td>
+                    
+                   
                   </tr>
+				  <tr>
+                    <td>11:00</td>
+                    
+                    
+                  </tr>
+				  <tr>
+                    <td>12:00</td>
+                    <td colspan="3"></td>
+                    
+                  </tr>
+				  <tr>
+                    <td colspan="4"  style="text-align:center;"> TARDE</td>
+                  </tr>
+				  <tr>
+                    <td>14:00</td>
+                    <td rowspan="4">Dale Sorvetes
+						Responsável: Guilherme Costa
+						Local: R. Caxias do Sul, 641 -
+						Cel. Antonino, Campo Grande -
+						MS, 79011-340</td>
+                    <td rowspan="4">Estação de Tratamento de
+						Esgotos Imbirussú
+						Responsável: Keila Roberta
+						N° vagas: 50
+						Local: Rua Muxeque Chinzarian
+						- Centro</td>
+                    <td></td>
+                  
+                  </tr>
+				  <tr>
+                    <td>15:00</td>
+                    
+                    <td></td>
+                  
+                  </tr>
+				  <tr>
+                    <td>16:00</td>
+                    
+                    <td></td>
+                  
+                  </tr>
+				  <tr>
+                    <td>17:00</td>
+                    
+                    <td></td>
+                
+                  </tr>
+				  <tr>
+                    <td>18:00</td>
+                    <td colspan="3"></td>
+                    
+                  </tr>
+				  
                 </tbody>
               </table>
             </div>
@@ -629,648 +847,908 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+                    <td colspan="9"  style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td colspan="8">"CATAPULTA Responsável: Profª Andrea Karmouche"</td>
+				  <tr>
+					<td>8:00</td>
+					<td colspan="3" rowspan="4">Concurso de Catapulta Profª Mª Andrea Karmouche</td>
+					<td colspan="5" rowspan="4">Horário da manhã reservado para testes iniciais da catapulta.
+						<br>Os grupos trazem a catapulta pronta e testam no alvo.
+						<br>Consultar as regras neste link.</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td colspan="8"></td>
+				  </tr>
+				  <tr>
+                    <td colspan="9"  style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:00 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
+				  <tr>
+					<td>13:00</td>
+					<td colspan="3" rowspan="4">Concurso de Catapulta Profª Mª Andrea Karmouche</td>
+					<td colspan="5" rowspan="4">Horário da tarde reservado para o concurso.
+												<br>Cada grupo terá 3 chances para acertar o alvo.	</td>
+				  </tr>
+				  <tr>
+					<td>14:00</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+					<td colspan="8"></td>
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="8"></td>
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Programação de Quarta-->
             <!--Palestra-->
             <div class="tab-pane" id="palestra-quarta">
+			  <h3>Palestra</h3>
               <table class="table table-bordered table-striped">
                 <thead>
                  
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+                    <td colspan="5" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td rowspan="2">Palestra GERÊNCIA DE PAVIMENTOS Palestrante Leomar (USP) 10h às 12h Local:</td>
-                    <td rowspan="2">"ALMOÇO 12h às 14h RESTAURANTE UNIVERSITÁRIO - RU"</td>
-                      <td rowspan="2">"Palestra DRENAGEM Palestrante Diogo (IME) 14h às 16h Local:"</td>
-                      <td rowspan="2">"Palestra SOLOS FINOS LATERÍTICOS Palestrante Paulo (LENC Engenharia SP)
-                        16h às 18h Local:"</td>
-                        <td rowspan="2">"Palestra INTERMODALIDADE DOS SISTEMAS DE TRANSPORTES Palestrante Luiz
-                          Miguel (UFMT) 18h às 20h Local:"</td>
-                        <td rowspan="2">"Palestra NOVO DIMENSIONAMENTO DE PAVIMENTOS FLEXÍVEIS Palestrante Laura
-                          Motta (UFRJ) 20h às 22h Local:"</td>
-                        <td>7</td>
-                        <td>8</td>
+				  <tr>
+					<td>8:00</td>
+					<td colspan="4" rowspan="2">Palestra
+						NOVO DIMENSIONAMENTO DE
+						PAVIMENTOS FLEXÍVEIS
+						<br>Palestrante
+						Laura MOTA (COPPE UFRJ)
+						<br>8h às 10h
+						<br>Local: Multiuso 1
+						<br>Nº vagas: 215</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+					<td colspan="4" rowspan="2">Palestra
+						DRENAGEM DE RODOVIAS
+						<br>Palestrante
+						Francisco Diogo (IME-RJ)
+						<br>10h às 12h
+						<br>Local: Multiuso 1
+						<br>Nº vagas: 215</td>
+					
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td colspan="4"></td>
+					
+				  </tr>
+				  <tr>
+                    <td colspan="5" style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+					<td>14:00</td>
+					<td colspan="4" rowspan="2">Palestra
+						INTERMODALIDADE DOS SISTEMAS
+						DE TRANSPORTES
+						<br>Palestrante
+						Luiz Miguel (UFMT)
+						<br>14h às 16h
+						<br>Local: Multiuso 1
+						<br>Nº vagas: 215</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+					<td colspan="4" rowspan="2">Palestra
+						SOLOS FINOS LATERÍTICOS
+						<br>Palestrante
+						José Leomar (EESC - USP - São Carlos)
+						<br>16h às 18h
+						<br>Local: Multiuso 1
+						<br>Nº vagas: 215</td>
+					
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="4"></td>
+				  </tr>
+				  <tr>
+                    <td colspan="5" style="text-align:center;"> NOITE</td>
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td colspan="8">PALESTRA GERAL - Mesa Redonda: Gênero, sexualidade e profissionalização
-                      Debatedores Profa. Dra. Constantina Xavier Filha Prof. Dr. Guilherme Rodrigues
-                      Passamani Prof. Dr. Tiago Duque</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
+				  <tr>
+					<td>18:30</td>
+					<td>Mesa Redonda: Gênero, sexualidade e profissionalização
+						<br>Profa. Dra. Constantina Xavier Filha
+						<br>Prof. Dr. Guilherme Rodrigues Passamani
+						<br>Prof. Dr. Tiago Duque
+						<br>Local: Multiuso 2
+						<br>Horário: 18h30 às 20h30
+						<br>Nº vagas: 215</td>
+					<td rowspan="2">INDUSTRIA 4.0 - Quarta Revolução
+						Industrial
+						<br>Palestrante
+						Josivaldo Godoy da Silva
+						<br>18h30min às 19h30min
+						<br>Local: Bloco 7 Anfiteatro 1</td>
+					<td rowspan="2">CONFORTO TÉRMICO NOS PARQUES
+						URBANOS DE CAMPO GRANDE
+						<br>Palestrante
+						Camila Amaro
+						<br>18h30 às 19h:30
+						<br>Local: Auditório da Arquitetura</td>
+					<td rowspan="2">
+						CREA MS e CREA JR
+						<br>Palestrante
+						Israel da Silva
+						<br>18h30 às 19h:30
+						<br>Local: Bloco 7 sala 504</td>
+				  </tr>
+				  <tr>
+					<td>19:30</td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>20:30</td>
+					<td colspan="4"></td>
+					
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Minicurso-->
             <div class="tab-pane" id="minicurso-quarta">
+			  <h3>Minicurso</h3>
               <table class="table table-bordered table-striped">
                 <thead>
                 
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td rowspan="2">"ABPV Instrutor: Local: Nº vagas:"</td>
-                    <td rowspan="2">"Engenharia do Entretenimento Instrutor: DZM Local: Nº vagas: 30-40"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td rowspan="2">"Licenciamento e Estudos Ambientais Instrutor: Guilherme Cavazzana Local:
-                      Nº vagas: 30"</td>
+                    <td colspan="7" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>7</td>
+				  <tr>
+					<td>8:00</td>
+					<td colspan="2" rowspan="4">Engenharia do Entretenimento
+						<br>Instrutor: DZM
+						<br>8:00 às 12:00
+						<br>Local: Multiuso - Sala 18
+						<br>Nº vagas: 40</td>
+					<td colspan="2" rowspan="4">Licenciamento e Estudos Ambientais
+						<br>Instrutor: Guilherme Cavazzana
+						<br>8:00 às 12:00
+						<br>Local: Multiuso - Sala 17
+						<br>Nº vagas: 30</td>
+					<td colspan="2" rowspan="4">Eberick
+						<br>Instrutor: Eduardo Alcantú
+						<br>Local: Bloco 7 - Sala 504
+						<br>Nº vagas: 40
+						<br>Obs: Os participantes devem
+						trazer seu notebook</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+                    <td colspan="7" tyle="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>"Acessibilidade Instrutor: CREA MS Local: Nº vagas: O máximo possível"</td>
-                    <td>"SF Formas - Sistema construtivo modular Instrutor: Guilherme Benito Local:
-                      Nº vagas: 30 - 40"</td>
-                    <td>"Como Investir na Bolsa de Valores Instrutor: CREA-JR e Delfos Local:
-                      Nº vagas: 30-40"</td>
-                    <td>"Desenvolvimento de Aplicativos para Android - Aplicação em Automação
-                      Residencial - Parte 2 Instrutor: Janderson Local: Nº de vagas: 20"</td>
-                    <td>7</td>
-                    <td>"CESG - Projetos de Rede de Esgotos Instrutor: Murilo Local: Nº vagas:
-                      30"</td>
+				  <tr>
+					<td>14:00</td>
+					<td rowspan="4">Acessibilidade
+						<br>Instrutor: CREA MS
+						<br>14:00 às 18:00
+						<br>Local: Multiuso 2
+						<br>Nº vagas: 215</td>
+					<td rowspan="4">SF Formas - Sistema construtivo modular
+						<br>Instrutor: Guilherme Benito
+						<br>14:00 às 18:00
+						<br>Local: Bloco 7 - sala 504
+						<br>Nº vagas: 60</td>
+					<td rowspan="4">Como Investir na Bolsa de Valores
+						<br>Instrutor: CREA-JR e Delfos
+						<br>14:00 às 18:00
+						<br>Local: Multiuso - Sala</td>
+					<td rowspan="4">Desenvolvimento de Aplicativos para
+						Android - Aplicação em Automação
+						Residencial - Parte 2
+						<br>Instrutor: Janderson
+						<br>14:00 às 18:00
+						<br>Local:
+						<br>Nº de vagas: 20</td>
+					<td rowspan="4">GPS
+						<br>Instrutor: José Marcato / Waleria
+						Menezes
+						<br>14:00-18:00
+						<br>Local: Laboratório de Topografia - Bloco
+						7A
+						<br>Nº vagas: 20</td>
+					<td rowspan="4">CESG - Projetos de Rede de Esgotos
+						<br>Instrutor: Murilo
+						<br>Local: Multiuso - Sala 17
+						<br>Nº vagas: 30</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+                    <td colspan="7" style="text-align:center;"> NOITE</td>
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>"Projeto de Energia Solar Fotovoltaica Instrutor: Sergio Okano Local:
-                      Nº vagas: 80"</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>"Delimitação de bacias hidrográficas com software livre Instrutor: Jaíza
-                      Santos Motta Local: Nº vagas:"</td>
-                    <td>8</td>
-                  </tr>
+				  <tr>
+					<td>18:30</td>
+					<td colspan="2">Projeto de Energia Solar Fotovoltaica
+						<br>Instrutor: Sergio Okano
+						<br>19h30min às 22h30min
+						<br>Local:
+						<br>Nº vagas: 80</td>
+					<td colspan="2">Quer Empreender? Incube sua empresa
+						<br>Instrutor: Jardel Matos (PIME)
+						<br>Local: Bloco 7 sala 505
+						<br>Vagas: 40</td>
+					<td colspan="2">
+						Delimitação de bacias hidrográficas com
+						software livre
+						<br>Instrutor: Jaíza Santos Motta
+						<br>18h30 às 19h30
+						<br>Local:
+						<br>Nº vagas:</td>
+				  </tr>
+				  <tr>
+					<td>19:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>20:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Visita Técnica-->
             <div class="tab-pane" id="visita-quarta">
+			  <h3>Visita Técnica</h3>
               <table class="table table-bordered table-striped">
                 <thead>
-                
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td rowspan="2">"BrasRáfia Responsável: Cleiton Gomide Local: Avenida Sete, 4015 - Pólo
-                      Empresarial Oeste (Núcleo Industrial)"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td rowspan="2">"Estação de Tratamento de Água Responsável: Keila Roberta N° vagas: 50
-                      Local: Rua Antônio Maria Coelho, n° 5.401 - Santa Fé"</td>
+                    <td colspan="4" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>7</td>
+				  <tr>
+					<td>8:00</td>
+					<td rowspan="4">BrasRáfia
+						<br>Responsável: Cleiton Gomide
+						<br>Local: Avenida Sete, 4015 - Pólo
+						Empresarial Oeste (Núcleo Industrial)</td>
+					<td rowspan="4">Estação de Tratamento de Água
+						<br>Responsável: Keila Roberta
+						<br>N° vagas: 50
+						<br>Local: Rua Antônio Maria Coelho, n°
+						5.401 - Santa Fé</td>
+					<td rowspan="4">Concessionária de energia Energisa
+						<br>Responsável: Cassio
+						<br>N° vagas: 25</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+                    <td colspan="4" style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>"MCassab / RealH Responsável: Carla Local: Avenida Zilá Correa Machado,
-                      12068 - Parque Res. Maria Aparecida Pedrossian"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>"Área de Conservação Responsável: Claudia Bacchi N° vagas: 50 Local:"</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
+				  <tr>
+					<td>14:00</td>
+					<td rowspan="4">MCassab / RealH
+						Responsável: Carla
+						Local: Avenida Zilá Correa Machado,
+						12068 - Parque Res. Maria Aparecida
+						Pedrossian</td>
+					<td rowspan="4">Área de Conservação
+						Responsável: Claudia Bacchi
+						N° vagas: 50
+						Local:</td>
+					<td rowspan="4">Concessionária de energia Energisa
+						Responsável: Cassio
+						N° vagas: 25</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+					
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Concurso-->
             <div class="tab-pane" id="concurso-quarta">
+			  <h3>Concurso</h3>
               <table class="table table-bordered table-striped">
                 <thead>
                 
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+                  
+				  <tr>
+                    <td colspan="9" style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+                    <td> 14:00</td>
+					<td colspan="8" rowspan="4" style="text-align:center;">Concurso de Pontes de Macarrão
+						<br>Prof. Dr. Andrés Cheung</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td colspan="8">"PONTE DE MACARRÃO Responsável: Prof Andrés Cheung"</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td colspan="8">"LANÇAMENTO DA CHARRETE Responsável: Prof ??????"</td>
-                  </tr>
+				  <tr>
+					<td>15:00</td>
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="8"></td>
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Programação de Quinta-->
             <!--Palestra-->
             <div class="tab-pane" id="palestra-quinta">
+			  <h3>Palestra</h3>
               <table class="table table-bordered table-striped">
                 <thead>
                 
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+                    <td colspan="4" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+					<td>8:00</td>
+					<td rowspan="2" colspan="3">Eficiência em Painéis Solares
+						<br>Palestrante
+						Eng. Eletricista Filipe Ribas
+						<br>8h00 às 10h:00
+						<br>Local: Bloco 7 - Anfiteatro 1
+						<br>Nº vagas: 80</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+					<td rowspan="2" colspan="3">Sistema de Transferência de
+						Energia Elétrica sem Fio
+						(wireless)
+						<br>Palestrante
+						Prof. Dr. Ruben Barros Godoy
+						<br>10h00 às 12h:00
+						<br>Local: Bloco 7 - Anfiteatro 1
+						<br>Nº vagas: 80</td>
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td colspan="3"></td>
+				  </tr>
+				  <tr>
+                    <td colspan="4" style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+					<td>14:00</td>
+					<td colspan="3"></td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+					<td colspan="3"></td>
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+					<td colspan="3"></td>
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+					<td colspan="3"></td>
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="3"></td>
+				  </tr>
+				  <tr>
+                    <td colspan="4" style="text-align:center;"> NOITE</td>
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>"Palestra 18h30 às 19h:30 Local:"</td>
-                    <td>"Palestra 18h30 às 19h:30 Local:"</td>
-                    <td>"Palestra EMPREENDEDORISMO Palestrante Jorge Veneza 18h30 às 19h:30 Local:"</td>
-                    <td>"Palestra APLICAÇÕES DE NANOMATERIAIS EM ENGENHARIA Palestrante PROF.
-                      DR. HEBERTON WENDER Local:"</td>
-                    <td>"Palestra A IMPORTÂNCIA DO EMPREENDEDORISMO E INOVAÇÃO EM PERÍODOS DE
-                      CRISE ECONÔMICA Palestrante FRANCISCO DE ALMEIDA JR. - EMPRETEC Local:"</td>
-                    <td>"Palestra 18h30 às 19h:30 Local:"</td>
-                    <td>7</td>
-                    <td>"Palestra ATUAÇÃO DO ENGENHEIRO E TECNÓLOGO EM SISTEMAS AMBIENTAIS Palestrante
-                      ADRIANO FERRARO Local:"</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td colspan="8">PALESTRA GERAL - "Palestra Jovens Profissionais 19h30 às 20h30"</td>
-                  </tr>
+				  <tr>
+					<td>18:30</td>
+					<td >Aplicativos Mobile (Jera)
+						<br>Palestrante
+						Saulo Arruda
+						<br>18h30 às 19h:30
+						<br>Local: Multiuso 1</td>
+					<td >Mesa Redonda: A IMPORTÂNCIA DO
+						EMPREENDEDORISMO E INOVAÇÃO
+						EM PERÍODOS DE CRISE ECONÔMICA
+						<br>Palestrantes
+						Francisco de Almeida Jr. (EMPRETEC)
+						Jorge Veneza
+						<br>18h30min às 19h30min
+						<br>Local: Multiuso 2</td>
+					<td >ATUAÇÃO DO ENGENHEIRO E
+						TECNÓLOGO EM SISTEMAS
+						AMBIENTAIS
+						<br>Palestrante
+						Adriano Ferraro
+						<br>18h30min às 19h30min
+						<br>Local: Auditório 1 Bloco 7A</td>
+				  </tr>
+				  <tr>
+					<td>19:30</td>
+					<td>PALESTRA GERAL</td>
+					<td colspan="2">Uso de Nanomateriais e Nanotecnologia nas Engenharias
+						Prof. Dr. Heberton Wender
+						<br>19h30 às 20h:30
+						<br>Local: Multiuso 1
+						Nº vagas: 215</td>
+				  </tr>
+				  <tr>
+					<td>20:30</td>
+					<td colspan="3"></td>
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Minicurso-->
             <div class="tab-pane" id="minicurso-quinta">
+			  <h3>Minicurso</h3>
               <table class="table table-bordered table-striped">
                 <thead>
                 
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td rowspan="2">"ABC / HENRY (bol.) Instrutor: Local: Nº vagas:"</td>
-                    <td rowspan="2">"Metodologia Ágil de Gerenciamento de Projetos: SCRUM Instrutor: Profª.
-                      Carolina Local: Nº vagas: 30-40"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td rowspan="2">"SISLA e SIRIEMA - Sistemas de Licenciamento Ambiental Instrutor: IMASUL
-                      Local: Nº vagas: 30"</td>
+                    <td colspan="5" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>7</td>
+				  <tr>
+					<td>8:00</td>
+					<td rowspan="4" colspan="2">Metodologia Ágil de Gerenciamento de
+						Projetos: SCRUM
+						<br>Instrutor: Profª. Carolina
+						<br>8:00 às 12:00
+						<br>Local:
+						<br>Nº vagas: 40</td>
+					<td rowspan="4" colspan="2">SISLA e SIRIEMA - Sistemas de
+						Licenciamento Ambiental
+						<br>Instrutor: IMASUL
+						<br>8:00 às 12:00
+						<br>Local: Multiuso - Sala 18
+						<br>Nº vagas: 30</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td colspan="4"/>
+				  </tr>
+				  <tr>
+                    <td colspan="5" style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>"Métodos Numéricos aplicados à Engenharia Civil Instrutor: Prof. Giovanni
-                      Local: Nº vagas:"</td>
-                    <td>"Financeirização da produção: impactos regionais na expansão de parcerias
-                      público-privadas, conglomerados internacionais e nacionais Instrutor: Prof.
-                      Marcio Rogério Silva (UFGD) Local: Nº vagas: 30-40"</td>
-                    <td>"Controladores Lógico Programáveis - CLPs Instrutor: Prof. Dr. Cristiano
-                      Quevedo Andrea e Prof. Dr. Raymundo Cordero Garcia Local: Nº de vagas:
-                      10"</td>
-                    <td>"ÍNDICES DE QUALIDADE DA ÁGUA Instrutor: Maria Helena Andrade e 2 alunos
-                      Local: Nº vagas:"</td>
-                    <td>"Elaboração de Projetos de Educação Ambienta SISLA e SIRIEMA - Sistemas
-                      de Licenciamento Ambiental Instrutor: IMASUL Local: Nº vagas: 30"</td>
+				  <tr>
+					<td>14:00</td>
+					<td rowspan="4">Métodos Numéricos aplicados à
+						Engenharia Civil
+						<br>Instrutor: Prof. Giovanni
+						<br>14:00 às 18:00
+						<br>Local:
+						<br>Nº vagas:</td>
+					<td rowspan="4">Controladores Lógico Programáveis -
+						CLPs
+						<br>Instrutor: Prof. Dr. Cristiano Quevedo
+						Andrea e Prof. Dr. Raymundo Cordero
+						Garcia
+						<br>14:00 às 18:00
+						<br>Local:
+						<br>Nº de vagas: 10</td>
+					<td rowspan="4">Indices de Qualidade da Água
+						<br>Instrutor: Maria Helena Andrade e 2
+						alunos
+						<br>14:00 às 18:00
+						<br>Local: Multiuso - sala 18
+						<br>Nº vagas:</td>
+					<td rowspan="4">Elaboração de Projetos de Educação
+						Ambienta SISLA e SIRIEMA - Sistemas de
+						Licenciamento Ambiental
+						<br>Instrutor: IMASUL
+						<br>14:00 às 18:00
+						<br>Local:
+						<br>Nº vagas: 30</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="4"></td>
+				  </tr>
+				  <tr>
+                    <td colspan="5" style="text-align:center;"> NOITE</td>
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>"Atribuições Profissionais de um Tecnólogo Instrutor: CREA MS Local: Nº
-                      vagas: 80"</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>"FOTOGRAFIA Instrutor: Vania Jucá Local: Nº vagas:"</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
+				  <tr>
+					<td>18:30</td>
+					<td colspan="2">Atribuições Profissionais de um
+						Tecnólogo
+						<br>Instrutor: CREA MS
+						<br>19h30min às 20h30min
+						<br>Local:
+						<br>Nº vagas: 80</td>
+					<td colspan="2">FOTOGRAFIA
+						<br>Instrutor: Vania Jucá
+						<br>19h30min às 20h30min
+						<br>Local:
+						<br>Nº vagas:</td>
+				  </tr>
+				  <tr>
+					<td>19:30</td>
+					<td  colspan="4"/>
+				  </tr>
+				  <tr>
+					<td>20:30</td>
+					<td colspan="4"/>
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Visita Técnica-->
             <div class="tab-pane" id="visita-quinta">
+			  <h3>Visita Técnica</h3>
               <table class="table table-bordered table-striped">
                 <thead>
-                
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td rowspan="2">"Votorantim Responsável: Local:"</td>
-                    <td rowspan="2">"Repram Responsável: Eduardo Galvão Local: R. Francisco Galvão Paim, 1709
-                      - Tiradentes, Campo Grande - MS, 79042-880"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td rowspan="2">"Centro de Educação Ambiental - CEA Polones Responsável: Ariel Gomes N°
-                      vagas: 50 Local: Rua Corveta, n° 141 - Carandá Bosque"</td>
+                    <td colspan="5" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+					<td>8:00</td>
+					<td rowspan="4" colspan="2">Votorantim
+						<br>Responsável:
+						<br>Local:</td>
+					<td rowspan="4"  colspan="2">Repram
+						<br>Responsável: Eduardo Galvão
+						<br>Local: R. Francisco Galvão Paim, 1709 -
+						Tiradentes</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td colspan="4"/>
+				  </tr>
+				  <tr>
+                    <td colspan="5" style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>"Pequi Indústrias de Produto de Limpeza Responsável: Responsável Técnico
-                      Nº de vagas: 15 Local: Av. Redentor, 1794 - Jardim Noroeste"</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>"Obras de Drenagem Responsável: Aramnado Barbedo N° vagas: 50 Local:"</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!--Concurso-->
-            <div class="tab-pane" id="concurso-quinta">
-              <table class="table table-bordered table-striped">
-                <thead>
-                
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td colspan="8">"CATAPULTA Responsável: Profª Andrea Karmouche"</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
+				  <tr>
+					<td>14:00</td>
+					<td rowspan="4">Pequi Indústrias de Produto de Limpeza
+						<br>Responsável: Responsável Técnico
+						<br>Nº de vagas: 15
+						<br>Local: Av. Redentor, 1794 - Jardim
+						Noroeste</td>
+					<td rowspan="4">Centro de Educação Ambiental - CEA
+						Polones
+						<br>Responsável: Ariel Gomes
+						<br>N° vagas: 50
+						<br>Local: Rua Corveta, n° 141 - Carandá
+						Bosque</td>
+					<td rowspan="4">Obras de Drenagem
+						<br>Responsável: Armando Barbedo
+						<br>N° vagas: 50
+						<br>Local:</td>
+					<td rowspan="4">Destacamento de Controle do espaço
+						aéreo - Segundo Centro Integrado de
+						Defesa Aérea e Controle de Tráfego Aéreo -
+						Força Aérea Brasileira (FAB)
+						<br>Responsável: Regivan
+						<br>N° vagas: 20</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="4"/>
+				  </tr>
                 </tbody>
               </table>
             </div>
             <!--Programação de Sexta-->
-            <!--Palestra-->
-            <div class="tab-pane" id="palestra-sexta"></div>
-            <!--Minicurso-->
-            <div class="tab-pane" id="minicurso-sexta">
-              <table class="table table-bordered table-striped">
+            <!--Trabalho academico-->
+            <div class="tab-pane" id="trabalho-sexta">
+			  <h3>Trabalho acadêmico</h3>
+			  <table class="table table-bordered table-striped">
+                <thead>
+					
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="9" style="text-align:center;"> MANHÃ</td>
+                  </tr>
+				  <tr>
+					<td>8:00</td>
+					<td rowspan="4" colspan="3">APRESENTAÇÃO DE
+						TRABALHOS
+						ACADÊMICOS</td>
+					<td rowspan="4" colspan="5">Os autores se revezarão ao longo do dia para apresentar seus trabalhos.
+						<br>O banner deverá ser impresso em papel e fixado no corredor dos laboratórios de
+						Física, com fita adesiva (não pode usar cola), um ao lado do outro, na mesma altura,
+						a cerca de 1m do piso.</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td colspan="8"/>
+				  </tr>
+				  <tr>
+                    <td colspan="9" style="text-align:center;"> TARDE</td>
+                  </tr>
+				  <tr>
+					<td>14:00</td>
+					<td rowspan="4" colspan="3">APRESENTAÇÃO DE
+						TRABALHOS
+						ACADÊMICOS</td>
+					<td rowspan="4" colspan="5">Os autores se revezarão ao longo do dia para apresentar seus trabalhos.
+						<br>O banner deverá ser impresso em papel e fixado no corredor dos laboratórios de
+						Física, com fita adesiva (não pode usar cola), um ao lado do outro, na mesma altura,
+						a cerca de 1m do piso.</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="8"/>
+				  </tr>
+				  <tr>
+                    <td colspan="9" style="text-align:center;"> NOITE</td>
+                  </tr>
+				  <tr>
+					<td>18:30</td>
+					<td colspan="3">APRESENTAÇÃO DE
+						TRABALHOS
+						ACADÊMICOS</td>
+					<td colspan="5">Os autores se revezarão ao longo do dia para apresentar seus trabalhos.
+						<br>O banner deverá ser impresso em papel e fixado no corredor dos laboratórios de
+						Física, com fita adesiva (não pode usar cola), um ao lado do outro, na mesma altura,
+						a cerca de 1m do piso.</td>
+				  </tr>
+				  <tr>
+					<td>19:30</td>
+					<td colspan="8" rowspan="2" style="text-align:center;">ENCERRAMENTO</td>
+				  </tr>
+				  <tr>
+					<td>20:30</td>
+				  </tr>
+                </tbody>
+              </table>
+			
+			</div>
+            <!--Campeonato-->
+            <div class="tab-pane" id="campeonato-sexta">
+			  <h3>Campeonato</h3>
+			  <table class="table table-bordered table-striped">
                 <thead>
                 
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MANHÃ
-                      <br>8:00 às 10:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+                    <td colspan="9" style="text-align:center;"> MANHÃ</td>
                   </tr>
-                  <tr>
-                    <td>MANHÃ
-                      <br>10:00 às 12:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
+				  <tr>
+					<td>8:00</td>
+					<td rowspan="4" colspan="3">CAMPEONATO
+						ESPORTIVO</td>
+					<td rowspan="4" colspan="5">As Atléticas de Engenharia e de Arquitetura divulgarão os torneios e montarão as
+						equipes que disputarão os campeonatos
+						<br>Local: Ginásio do Moreninho</td>
+				  </tr>
+				  <tr>
+					<td>9:00</td>
+				  </tr>
+				  <tr>
+					<td>10:00</td>
+				  </tr>
+				  <tr>
+					<td>11:00</td>
+				  </tr>
+				  <tr>
+					<td>12:00</td>
+					<td colspan="8"/>
+				  </tr>
+				  <tr>
+                    <td colspan="9" style="text-align:center;"> TARDE</td>
                   </tr>
-                  <tr>
-                    <td>TARDE
-                      <br>14:00 às 18:00</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>"GPS Instrutor: José Marcato Local: Nº vagas:"</td>
-                    <td>8</td>
+				  <tr>
+					<td>14:00</td>
+					<td rowspan="4" colspan="3">CAMPEONATO
+						ESPORTIVO</td>
+					<td rowspan="4" colspan="5">As Atléticas de Engenharia e de Arquitetura divulgarão os torneios e montarão as
+						equipes que disputarão os campeonatos
+						<br>Local: Ginásio do Moreninho</td>
+				  </tr>
+				  <tr>
+					<td>15:00</td>
+				  </tr>
+				  <tr>
+					<td>16:00</td>
+				  </tr>
+				  <tr>
+					<td>17:00</td>
+				  </tr>
+				  <tr>
+					<td>18:00</td>
+					<td colspan="8"/>
+				  </tr>
+				  <tr>
+                    <td colspan="9" style="text-align:center;"> NOITE</td>
                   </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>18:30 às 19:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>NOITE
-                      <br>19:30 às 20:30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
+				  <tr>
+					<td>18:30</td>
+					<td colspan="3">CAMPEONATO
+						ESPORTIVO</td>
+					<td colspan="5">As Atléticas de Engenharia e de Arquitetura divulgarão os torneios e montarão as
+						equipes que disputarão os campeonatos
+						<br>Local: Ginásio do Moreninho</td>
+				  </tr>
+				  <tr>
+					<td>19:30</td>
+					<td colspan="8" rowspan="2" style="text-align:center;">ENCERRAMENTO</td>
+				  </tr>
+				  <tr>
+					<td>20:30</td>
+				  </tr>
                 </tbody>
               </table>
-            </div>
-            <!--Visita Técnica-->
-            <div class="tab-pane" id="visita-sexta"></div>
-            <!--Concurso-->
-            <div class="tab-pane" id="concurso-sexta"></div>
+			</div>
           </div>
         </div>
       </div>
@@ -1278,12 +1756,9 @@
     <!-- FOOTER -->
     <footer>
       <p class="pull-right">
-        <a href="#">Back to top</a>
+        <a href="#">Volte ao topo</a>
       </p>
-      <p>© 2013 Company, Inc. ·
-        <a href="#">Privacy</a>·
-        <a href="#">Terms</a>
-      </p>
+      
     </footer>
     <!-- /.container -->
     <!-- Placed at the end of the document so the pages load faster -->
