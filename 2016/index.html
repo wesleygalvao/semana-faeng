@@ -9,199 +9,199 @@
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
     <style>
       /* GLOBAL STYLES -------------------------------------------------- */
-                            /* Padding below the footer and lighter body text */
-                            body {
-                                padding-bottom: 40px;
-                                color: #5a5a5a;
-                            }
-                            /* CUSTOMIZE THE NAVBAR -------------------------------------------------- */
-                            /* Special class on .container surrounding .navbar, used for positioning it into place. */
-                            .navbar-wrapper {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                z-index: 10;
-                                margin-top: 20px;
-                                margin-bottom: -90px;
-                                /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-                            }
-                            .navbar-wrapper .navbar {
-                            }
-                            /* Remove border and change up box shadow for more contrast */
-                            .navbar .navbar-inner {
-                                border: 0;
-                                -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
-                                -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
-                                box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
-                            }
-                            /* Downsize the brand/project name a bit */
-                            .navbar .brand {
-                                padding: 14px 20px 16px;
-                                /* Increase vertical padding to match navbar links */
-                                font-size: 16px;
-                                font-weight: bold;
-                                text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
-                            }
-                            /* Navbar links: increase padding for taller navbar */
-                            .navbar .nav > li > a {
-                                padding: 15px 20px;
-                            }
-                            /* Offset the responsive button for proper vertical alignment */
-                            .navbar .btn-navbar {
-                                margin-top: 10px;
-                            }
-                            /* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
-                            /* Carousel base class */
-                            .carousel {
-                                margin-bottom: 60px;
-                            }
-                            .carousel .container-fluid {
-                                position: relative;
-                                z-index: 9;
-                            }
-                            .carousel-control {
-                                height: 80px;
-                                margin-top: 0;
-                                font-size: 120px;
-                                text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-                                background-color: transparent;
-                                border: 0;
-                                z-index: 10;
-                            }
-                            .carousel .item {
-                                height: 500px;
-                            }
-                            .carousel img {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                min-width: 100%;
-                                height: 500px;
-                            }
-                            .carousel-caption {
-                                background-color: transparent;
-                                position: static;
-                                max-width: 550px;
-                                padding: 0 20px;
-                                margin-top: 200px;
-                            }
-                            .carousel-caption h1, .carousel-caption .lead {
-                                margin: 0;
-                                line-height: 1.25;
-                                color: #fff;
-                                text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-                            }
-                            .carousel-caption .btn {
-                                margin-top: 10px;
-                            }
-                            /* MARKETING CONTENT -------------------------------------------------- */
-                            /* Center align the text within the three columns below the carousel */
-                            .marketing .span4 {
-                                text-align: center;
-                            }
-                            .marketing h2 {
-                                font-weight: normal;
-                            }
-                            .marketing .span4 p {
-                                margin-left: 10px;
-                                margin-right: 10px;
-                            }
-                            /* Featurettes ------------------------- */
-                            .featurette-divider {
-                                margin: 80px 0;
-                                /* Space out the Bootstrap <hr> more */
-                            }
-                            .featurette {
-                                padding-top: 120px;
-                                /* Vertically center images part 1: add padding above and below text. */
-                                overflow: hidden;
-                                /* Vertically center images part 2: clear their floats. */
-                            }
-                            .featurette-image {
-                                margin-top: -120px;
-                                /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-                            }
-                            /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-                            .featurette-image.pull-left {
-                                margin-right: 40px;
-                            }
-                            .featurette-image.pull-right {
-                                margin-left: 40px;
-                            }
-                            /* Thin out the marketing headings */
-                            .featurette-heading {
-                                font-size: 50px;
-                                font-weight: 300;
-                                line-height: 1;
-                                letter-spacing: -1px;
-                            }
-                            /* RESPONSIVE CSS -------------------------------------------------- */
-                            @media (max-width: 979px) {
-                                .container-fluid.navbar-wrapper {
-                                    margin-bottom: 0;
-                                    width: auto;
-                                }
-                                .navbar-inner {
-                                    border-radius: 0;
-                                    margin: -20px 0;
-                                }
-                                .carousel .item {
-                                    height: 500px;
-                                }
-                                .carousel img {
-                                    width: auto;
-                                    height: 500px;
-                                }
-                                .featurette {
-                                    height: auto;
-                                    padding: 0;
-                                }
-                                .featurette-image.pull-left, .featurette-image.pull-right {
-                                    display: block;
-                                    float: none;
-                                    max-width: 40%;
-                                    margin: 0 auto 20px;
-                                }
-                            }
-                            @media (max-width: 767px) {
-                                .navbar-inner {
-                                    margin: -20px;
-                                }
-                                .carousel {
-                                    margin-left: -20px;
-                                    margin-right: -20px;
-                                }
-                                .carousel .container-fluid {
-                                }
-                                .carousel .item {
-                                    height: 300px;
-                                }
-                                .carousel img {
-                                    height: 300px;
-                                }
-                                .carousel-caption {
-                                    width: 65%;
-                                    padding: 0 70px;
-                                    margin-top: 100px;
-                                }
-                                .carousel-caption h1 {
-                                    font-size: 30px;
-                                }
-                                .carousel-caption .lead, .carousel-caption .btn {
-                                    font-size: 18px;
-                                }
-                                .marketing .span4 + .span4 {
-                                    margin-top: 40px;
-                                }
-                                .featurette-heading {
-                                    font-size: 30px;
-                                }
-                                .featurette .lead {
-                                    font-size: 18px;
-                                    line-height: 1.5;
-                                }
-                            }
+                                    /* Padding below the footer and lighter body text */
+                                    body {
+                                        padding-bottom: 40px;
+                                        color: #5a5a5a;
+                                    }
+                                    /* CUSTOMIZE THE NAVBAR -------------------------------------------------- */
+                                    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+                                    .navbar-wrapper {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        z-index: 10;
+                                        margin-top: 20px;
+                                        margin-bottom: -90px;
+                                        /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+                                    }
+                                    .navbar-wrapper .navbar {
+                                    }
+                                    /* Remove border and change up box shadow for more contrast */
+                                    .navbar .navbar-inner {
+                                        border: 0;
+                                        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+                                        -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+                                        box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+                                    }
+                                    /* Downsize the brand/project name a bit */
+                                    .navbar .brand {
+                                        padding: 14px 20px 16px;
+                                        /* Increase vertical padding to match navbar links */
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+                                    }
+                                    /* Navbar links: increase padding for taller navbar */
+                                    .navbar .nav > li > a {
+                                        padding: 15px 20px;
+                                    }
+                                    /* Offset the responsive button for proper vertical alignment */
+                                    .navbar .btn-navbar {
+                                        margin-top: 10px;
+                                    }
+                                    /* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
+                                    /* Carousel base class */
+                                    .carousel {
+                                        margin-bottom: 60px;
+                                    }
+                                    .carousel .container-fluid {
+                                        position: relative;
+                                        z-index: 9;
+                                    }
+                                    .carousel-control {
+                                        height: 80px;
+                                        margin-top: 0;
+                                        font-size: 120px;
+                                        text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+                                        background-color: transparent;
+                                        border: 0;
+                                        z-index: 10;
+                                    }
+                                    .carousel .item {
+                                        height: 500px;
+                                    }
+                                    .carousel img {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        min-width: 100%;
+                                        height: 500px;
+                                    }
+                                    .carousel-caption {
+                                        background-color: transparent;
+                                        position: static;
+                                        max-width: 550px;
+                                        padding: 0 20px;
+                                        margin-top: 200px;
+                                    }
+                                    .carousel-caption h1, .carousel-caption .lead {
+                                        margin: 0;
+                                        line-height: 1.25;
+                                        color: #fff;
+                                        text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+                                    }
+                                    .carousel-caption .btn {
+                                        margin-top: 10px;
+                                    }
+                                    /* MARKETING CONTENT -------------------------------------------------- */
+                                    /* Center align the text within the three columns below the carousel */
+                                    .marketing .span4 {
+                                        text-align: center;
+                                    }
+                                    .marketing h2 {
+                                        font-weight: normal;
+                                    }
+                                    .marketing .span4 p {
+                                        margin-left: 10px;
+                                        margin-right: 10px;
+                                    }
+                                    /* Featurettes ------------------------- */
+                                    .featurette-divider {
+                                        margin: 80px 0;
+                                        /* Space out the Bootstrap <hr> more */
+                                    }
+                                    .featurette {
+                                        padding-top: 120px;
+                                        /* Vertically center images part 1: add padding above and below text. */
+                                        overflow: hidden;
+                                        /* Vertically center images part 2: clear their floats. */
+                                    }
+                                    .featurette-image {
+                                        margin-top: -120px;
+                                        /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+                                    }
+                                    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+                                    .featurette-image.pull-left {
+                                        margin-right: 40px;
+                                    }
+                                    .featurette-image.pull-right {
+                                        margin-left: 40px;
+                                    }
+                                    /* Thin out the marketing headings */
+                                    .featurette-heading {
+                                        font-size: 50px;
+                                        font-weight: 300;
+                                        line-height: 1;
+                                        letter-spacing: -1px;
+                                    }
+                                    /* RESPONSIVE CSS -------------------------------------------------- */
+                                    @media (max-width: 979px) {
+                                        .container-fluid.navbar-wrapper {
+                                            margin-bottom: 0;
+                                            width: auto;
+                                        }
+                                        .navbar-inner {
+                                            border-radius: 0;
+                                            margin: -20px 0;
+                                        }
+                                        .carousel .item {
+                                            height: 500px;
+                                        }
+                                        .carousel img {
+                                            width: auto;
+                                            height: 500px;
+                                        }
+                                        .featurette {
+                                            height: auto;
+                                            padding: 0;
+                                        }
+                                        .featurette-image.pull-left, .featurette-image.pull-right {
+                                            display: block;
+                                            float: none;
+                                            max-width: 40%;
+                                            margin: 0 auto 20px;
+                                        }
+                                    }
+                                    @media (max-width: 767px) {
+                                        .navbar-inner {
+                                            margin: -20px;
+                                        }
+                                        .carousel {
+                                            margin-left: -20px;
+                                            margin-right: -20px;
+                                        }
+                                        .carousel .container-fluid {
+                                        }
+                                        .carousel .item {
+                                            height: 300px;
+                                        }
+                                        .carousel img {
+                                            height: 300px;
+                                        }
+                                        .carousel-caption {
+                                            width: 65%;
+                                            padding: 0 70px;
+                                            margin-top: 100px;
+                                        }
+                                        .carousel-caption h1 {
+                                            font-size: 30px;
+                                        }
+                                        .carousel-caption .lead, .carousel-caption .btn {
+                                            font-size: 18px;
+                                        }
+                                        .marketing .span4 + .span4 {
+                                            margin-top: 40px;
+                                        }
+                                        .featurette-heading {
+                                            font-size: 30px;
+                                        }
+                                        .featurette .lead {
+                                            font-size: 18px;
+                                            line-height: 1.5;
+                                        }
+                                    }
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -248,7 +248,7 @@
               </ul>
             </div>
             <form class="hidden-sm hidden-xs navbar-form navbar-right pull-right text-center">
-              <!--  <button type="submit" class="btn btn-success disabled" >Login</button>-->
+              <!-- <button type="submit" class="btn btn-success disabled">Login</button>-->
             </form>
             <!--/.nav-collapse -->
           </div>
@@ -265,19 +265,11 @@
       <div class="carousel-inner">
         <div class="img-responsive">
           <p class="text-center">
-          <img src="img/FAENG_logo_evento.png" width="1024" height="636"  alt="Imagem Responsiva">
+            <img src="img/FAENG_logo_evento.png" width="1024" height="636" alt="Imagem Responsiva">
           </p>
           <div class="container-fluid"></div>
         </div>
       </div>
-      <p class="text-center">
-        <a class="btn btn-primary btn-large" href="http://goo.gl/forms/xPnJ0qMUO7" target="_blank">Inscreva-se</a>
-      </p>
-
-      <p class="text-center">
-        <a class="btn btn-alert btn-large" href="https://goo.gl/nz1Kwu" target="_blank">Inscrição para Eng.Civil</a>
-      </p>
-
       <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><i class="icon-prev fa fa-angle-left"></i></a>
       <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><i class="icon-next fa fa-angle-right"></i> </a>
     </div>
@@ -285,45 +277,54 @@
     <!-- Marketing messaging and featurettes -->
     <!-- Wrap the rest of the page in another container-fluid to center all
     the content. -->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="alert alert-dismissable alert-success" >
+              <a href = "https://www.facebook.com/II-Semana-da-FAENG-289587434710494/?fref=ts" target="_blank" <strong> Inscrições encerradas!</strong>Favor, checar o seu nome nas listas de
+              inscritos confirmados na nosa página do Facebook clicando aqui </a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid marketing">
       <!-- /.row -->
       <!-- START THE FEATURETTES -->
       <hr class="featurette-divider">
       <div class="featurette">
         <div id="concursos" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-			<li data-target="#concursos" data-slide-to="0" class="active"></li>
-			<li data-target="#concursos" data-slide-to="1"></li>
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner img-responsive" role="listbox">
-			<div class="item active">
-			  <img src="img/concurso1.jpg" width="1024" height="636"  alt="concurso">
-			</div>
-
-			<div class="item">
-			  <img src="img/concurso2.jpg" width="1024" height="636" alt="concurso">
-			</div>
-
-		  </div>
-
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#concursos" role="button" data-slide="prev">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#concursos" data-slide-to="0" class="active"></li>
+            <li data-target="#concursos" data-slide-to="1"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner img-responsive" role="listbox">
+            <div class="item active">
+              <img src="img/concurso1.jpg" width="1024" height="636" alt="concurso">
+            </div>
+            <div class="item">
+              <img src="img/concurso2.jpg" width="1024" height="636" alt="concurso">
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#concursos" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only"><</span>
+			<span class="sr-only">&lt;</span>
 		  </a>
-		  <a class="right carousel-control" href="#concursos" role="button" data-slide="next">
+          <a class="right carousel-control" href="#concursos" role="button" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">></span>
+			<span class="sr-only">&gt;</span>
 		  </a>
-		</div>
-		<!--<img class="featurette-image pull-right" src="img/concurso.jpg">-->
+        </div>
+        <!--<img class="featurette-image pull-right" src="img/concurso.jpg">-->
         <h2 class="featurette-heading">Concursos.
           <span class="muted">Desafie-se.</span>
         </h2>
-        <p class="lead">Diversos concursos durante toda a semana. Forme um time de no maximo cinco membros, com outros participantes de diversos cursos e concorra nos vários desafios que teremos na semana. Deixe sua marca no evento.</p>
+        <p class="lead">Diversos concursos durante toda a semana. Forme um time de no maximo cinco
+          membros, com outros participantes de diversos cursos e concorra nos vários
+          desafios que teremos na semana. Deixe sua marca no evento.</p>
       </div>
       <hr class="featurette-divider">
       <div class="featurette">
@@ -331,38 +332,45 @@
         <h2 class="featurette-heading">Minicurso.
           <span class="muted">Oficinas.</span>
         </h2>
-        <p class="lead">Estes são os minicursos já programados para a II Semana da FAENG. Ainda vem mais por aí.
-			<br>Todos serão gratuitos.
-			<br>Escolha no momento da inscrição
-			<br>1. 40 Fórmulas Mais Utilizadas no Excel
-			<br>2. Acessibilidade
-			<br>3. Análise de estabilidade de muro de contenção em gabiões utilizando o Método do Equilíbrio Limite
-			<br>4. Atribuições Profissionais de um Tecnólogo
-			<br>5. CESG - Projetos de Rede de Esgotos
-			<br>6. Como Investir na Bolsa de Valores
-			<br>7. Controladores Lógico Programáveis - CLPs
-			<br>8. Delimitação de bacias hidrográficas com software livre
-			<br>9. Desenvolvimento de Aplicativos para Android - Aplicação em Automação Residencial - Parte 1
-			<br>10. Desenvolvimento de Aplicativos para Android - Aplicação em Automação Residencial - Parte 2
-			<br>11. Desenvolvimento de materiais porosos pelo método de sacrifício e avaliação de suas propriedades mecânicas
-			<br>12. Eberick
-			<br>13. Elaboração de Projetos de Educação Ambienta SISLA e SIRIEMA - Sistemas de Licenciamento Ambiental
-			<br>14. Engenharia do Entretenimento
-			<br>15. EPANET - simulador de redes de abastecimento de água
-			<br>16. Financeirização da produção: impactos regionais na expansão de parcerias público-privadas, conglomerados internacionais e nacionais
-			<br>17. Fotografia
-			<br>18. GPS
-			<br>19. Indices de Qualidade da Água
-			<br>20. Licenciamento e Estudos Ambientais
-			<br>21. Metodologia Ágil de Gerenciamento de Projetos: SCRUM
-			<br>22. Métodos Numéricos aplicados à Engenharia Civil
-			<br>23. MS Project
-			<br>24. Projeto de Energia Solar Fotovoltaica
-			<br>25. Projetos de Drenagem Urbana
-			<br>26. Quer Empreender? Incube sua empresa
-			<br>27. SF Formas - Sistema construtivo modular
-			<br>28. SISLA e SIRIEMA - Sistemas de Licenciamento Ambiental
-			<br>29. Sketchup</p>
+        <p class="lead">Estes são os minicursos já programados para a II Semana da FAENG. Ainda
+          vem mais por aí.
+          <br>Todos serão gratuitos.
+          <br>Escolha no momento da inscrição
+          <br>1. 40 Fórmulas Mais Utilizadas no Excel
+          <br>2. Acessibilidade
+          <br>3. Análise de estabilidade de muro de contenção em gabiões utilizando
+          o Método do Equilíbrio Limite
+          <br>4. Atribuições Profissionais de um Tecnólogo
+          <br>5. CESG - Projetos de Rede de Esgotos
+          <br>6. Como Investir na Bolsa de Valores
+          <br>7. Controladores Lógico Programáveis - CLPs
+          <br>8. Delimitação de bacias hidrográficas com software livre
+          <br>9. Desenvolvimento de Aplicativos para Android - Aplicação em Automação
+          Residencial - Parte 1
+          <br>10. Desenvolvimento de Aplicativos para Android - Aplicação em Automação
+          Residencial - Parte 2
+          <br>11. Desenvolvimento de materiais porosos pelo método de sacrifício e avaliação
+          de suas propriedades mecânicas
+          <br>12. Eberick
+          <br>13. Elaboração de Projetos de Educação Ambienta SISLA e SIRIEMA - Sistemas
+          de Licenciamento Ambiental
+          <br>14. Engenharia do Entretenimento
+          <br>15. EPANET - simulador de redes de abastecimento de água
+          <br>16. Financeirização da produção: impactos regionais na expansão de parcerias
+          público-privadas, conglomerados internacionais e nacionais
+          <br>17. Fotografia
+          <br>18. GPS
+          <br>19. Indices de Qualidade da Água
+          <br>20. Licenciamento e Estudos Ambientais
+          <br>21. Metodologia Ágil de Gerenciamento de Projetos: SCRUM
+          <br>22. Métodos Numéricos aplicados à Engenharia Civil
+          <br>23. MS Project
+          <br>24. Projeto de Energia Solar Fotovoltaica
+          <br>25. Projetos de Drenagem Urbana
+          <br>26. Quer Empreender? Incube sua empresa
+          <br>27. SF Formas - Sistema construtivo modular
+          <br>28. SISLA e SIRIEMA - Sistemas de Licenciamento Ambiental
+          <br>29. Sketchup</p>
       </div>
       <hr class="featurette-divider">
       <div class="featurette">
@@ -370,10 +378,14 @@
         <h2 class="featurette-heading">Trabalho acadêmico.
           <span class="muted">Checkmate.</span>
         </h2>
-        <p class="lead">Se você tem algum trabalho acadêmico resultado de um experimento, pesquisa, TCC ou disciplina que seja interessante, poderá apresentar na II Semana Acadêmica da FAENG.
-Neste evento não podem participar alunos de fora da FAENG.
-Os autores se revezarão ao longo do dia para apresentar seus trabalhos.
-O banner deverá ser impresso em papel e fixado em local ainda a ser definido, com fita adesiva (não pode usar cola), um ao lado do outro, na mesma altura, a cerca de 1m do piso. <a href="https://drive.google.com/file/d/0B8UNt2P3O0WOQTh5UmhpOG9zaXM/view?usp=sharing"> Modelo</a>.</p>
+        <p class="lead">Se você tem algum trabalho acadêmico resultado de um experimento, pesquisa,
+          TCC ou disciplina que seja interessante, poderá apresentar na II Semana
+          Acadêmica da FAENG. Neste evento não podem participar alunos de fora da
+          FAENG. Os autores se revezarão ao longo do dia para apresentar seus trabalhos.
+          O banner deverá ser impresso em papel e fixado em local ainda a ser definido,
+          com fita adesiva (não pode usar cola), um ao lado do outro, na mesma altura,
+          a cerca de 1m do piso.
+          <a href="https://drive.google.com/file/d/0B8UNt2P3O0WOQTh5UmhpOG9zaXM/view?usp=sharing"> Modelo</a>.</p>
       </div>
       <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
@@ -381,35 +393,33 @@ O banner deverá ser impresso em papel e fixado em local ainda a ser definido, c
     <!--Programacao-->
     <div class="section" id="programacao">
       <div class="container">
-        <a href="https://drive.google.com/file/d/0B8gDPhVytTTSRHdVUkcta2wxXzA/view?usp=sharing" target="_blank"><h2>Programação - Download</h2></a>
-
-        <!--  QUADRO DE HORÁRIOS -->
-
-
-    <!-- FOOTER -->
-    <footer>
-      <p class="pull-right">
-        <a href="#">Back to top</a>
-      </p>
-      <p>© 2013 Company, Inc. ·
-        <a href="#">Privacy</a>·
-        <a href="#">Terms</a>
-      </p>
-    </footer>
-    <!-- /.container -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+        <a href="https://drive.google.com/file/d/0B1NDsOAPYSaET0JXMXRQRnlXdWM/view?usp=sharing" target="_blank"><h2>Programação - Download</h2></a>
+        <!-- QUADRO DE HORÁRIOS -->
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Place sticky footer content here.</p>
+            <p class="pull-right">
+              <a href="#">Retornar ao topo</a>
+            </p>
+          </div>
+        </footer>
+        <!-- /.container -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
-    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <script>
-      ! function($) {
-                                  $(function() {
-                                      // carousel demo
-                                      $('#evento').carousel()
-                                  })
-                              }(window.jQuery)
-    </script>
-    <script src="main.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+          ! function($) {
+                                                  $(function() {
+                                                      // carousel demo
+                                                      $('#evento').carousel()
+                                                  })
+                                              }(window.jQuery)
+        </script>
+        <script src="main.js"></script>
+      </div>
+    </div>
 
 
 </body></html>
