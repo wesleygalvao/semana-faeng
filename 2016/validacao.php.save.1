@@ -1,0 +1,30 @@
+<?php
+
+
+    // Tenta se conectar ao servidor MySQL
+    mysql_connect('localhost', 'root', '12345678') or trigger_error(mysql_error());
+    // Tenta se conectar a um banco de dados MySQL
+    mysql_select_db('semanafaeng') or trigger_error(mysql_error());
+
+    $cpf = mysql_real_escape_string($_POST['cpf']);
+
+  // Validação do usuário/senha digitados
+    $sql = "SELECT `id`, `nome`, `cpf` FROM `participantes` WHERE (`cpf` = '".$cpf ."') ";
+    $query = mysql_query($sql);
+    if (mysql_num_rows($query) != 1) {
+        // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
+        echo "CPF inválido!"; exit;
+    } else {
+        // Salva os dados encontados na variável $resultado
+        $resultado = mysql_fetch_assoc($query));
+
+       }
+
+?>
+
+
+
+
+
+
+
