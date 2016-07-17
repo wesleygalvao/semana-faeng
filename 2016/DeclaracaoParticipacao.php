@@ -18,7 +18,7 @@
     $alert = '';//Rebece um código HTML para alerta. 
 
     // Tenta se conectar ao servidor MySQL
-    $id_connection = mysql_connect('localhost', 'root', '070194') or trigger_error(mysql_error());
+    $id_connection = mysql_connect('localhost', 'root', '12345678') or trigger_error(mysql_error());
     // Tenta se conectar a um banco de dados MySQL
     mysql_select_db('semanafaeng') or trigger_error(mysql_error());      
     //Variável guarda o valor recebido pelo o input.
