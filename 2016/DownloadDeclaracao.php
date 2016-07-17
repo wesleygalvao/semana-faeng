@@ -48,9 +48,8 @@
         header('Content-Length: '.filesize($caminho_download));
         // Busca todo o arquivo e joga o seu conteúdo para que possa ser baixado
         readfile($caminho_download);
-    }else{
-        echo $caminho_download;
-        die('Arquivo não existe!');
+    }else{        
+        die(''.$arquivo.' Arquivo não existe!');
     }
 
             
