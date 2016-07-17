@@ -133,7 +133,7 @@
                 echo '<p>';
                 echo '<div align="center">';
 
-                echo '<a href="DownloadDeclacao.php?arquivo='.$cpf.'" align="center" class="btn btn-primary btn-lg enabled">Baixar declaração</a>';
+                echo '<a href="DownloadDeclaracao.php?arquivo='.$cpf.'" align="center" class="btn btn-primary btn-lg enabled">Baixar declaração</a>';
                
                 echo '</div>';  
                 echo '</p>';                
