@@ -42,7 +42,7 @@
     
     // Validação do usuário/senha digitados
     if(strlen($cpfcopy) >= 9 ){// Se a string resultante for maior ou igual a 9(evita que os usuários tenham acesso a qualquer CPF busncando por algum número aleatório)
-       $sql = "SELECT id, nome, cpf, rga FROM participantes WHERE cpf LIKE '%".$cpfcopy."'";
+       $sql = "SELECT id, nome, cpf FROM participantes WHERE cpf LIKE '%".$cpfcopy."'";
        $query = mysql_query($sql); 
        $count = mysql_num_rows($query);
        $row = mysql_fetch_array($query); 
