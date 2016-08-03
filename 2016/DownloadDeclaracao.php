@@ -1,7 +1,7 @@
 <?php
     
     //Variável recebe o diretório onde os arquivos estão armazenados
-    $path =  '/var/www/semana-faeng/2016/download/';
+    $path =  '/var/www/semana-faeng/2016/Dropbox/Declaracao/';
     //Recebe via GET o número do CPF do usuário, vindo da DeclaracaoParticipacao.php
     $arquivo = $_GET['arquivo'];
     //Para CPF = 
