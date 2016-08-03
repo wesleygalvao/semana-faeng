@@ -13,7 +13,7 @@
 
     //Para CPFs que estão no BD e que contenham apenas 10 dígitos
     $string10 = substr($string11, 1,10); $string10 =  $string10.'.pdf';
-    //Para CPFs que estão no BD e que contenham apenas 10 dígitos
+    //Para CPFs que estão no BD e que contenham apenas 9 dígitos
     $string9 = substr($string11, 2,9);   $string9 =  $string9.'.pdf';
 
     // Contatena-se o diretório com o nome
