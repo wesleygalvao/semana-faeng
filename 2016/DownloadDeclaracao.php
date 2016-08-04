@@ -1,7 +1,7 @@
 <?php
     
     //Variável recebe o diretório onde os arquivos estão armazenados
-    $path =  '/var/www/semana-faeng/2016/Dropbox/Declaracao/';
+    $path =  '/var/www/semana-faeng/2016/download/';
     //Recebe via GET o número do CPF do usuário, vindo da DeclaracaoParticipacao.php
     $arquivo = $_GET['arquivo'];
     //Para CPF = 
@@ -49,7 +49,11 @@
         // Busca todo o arquivo e joga o seu conteúdo para que possa ser baixado
         readfile($caminho_download);
     }else{        
-        die(''.$arquivo.' Arquivo não existe!');
+        $alert = '<div class="alert alert-danger"role="alert" align="center" >
+                :( O arquivo ainda não existe. Estamos trabalhando nisso
+                <br> Entre em contato com iisemanafaeng@gmail.com </div>';       
+        echo $alert;
+        die();
     }
 
             

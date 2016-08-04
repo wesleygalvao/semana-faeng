@@ -123,7 +123,7 @@
                 //Mensagem de alerta
                 $alert = '<div class="alert alert-danger"role="alert" align="center" >
                 Oops, CPF inválido. Tente novamente 
-                <br>Dificuldade na busca? Entre em contato com semanafaeng2016@gmail.com </div>';
+                <br>Algum problema na busca ou com o documento? Entre em contato com iisemanafaeng@gmail.com </div>';
                 echo $alert;               
               }else{ //Se algum CPF for encontrado
                 echo '<div id = "resultado" align="center"><h2 class="text-center text-info">';               
