@@ -42,7 +42,7 @@
     
     // Validação do usuário/senha digitados
     if(strlen($cpfcopy) >= 9 ){// Se a string resultante for maior ou igual a 9(evita que os usuários tenham acesso a qualquer CPF busncando por algum número aleatório)
-       $sql = "SELECT id, nome, cpf FROM participantes WHERE cpf LIKE '%".$cpfcopy."'";
+       $sql = "SELECT id, nome, cpf FROM participantes WHERE cpf LIKE '%".$cpfcopy."%'";
        $query = mysql_query($sql); 
        $count = mysql_num_rows($query);
        $row = mysql_fetch_array($query); 
@@ -108,7 +108,7 @@
             <form action="DeclaracaoParticipacao.php" method="POST" role="form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" name = "cpf" id = "txCpf" class="form-control" placeholder="Digite seu CPF: apenas números"  maxlength="11">
+                  <input type="text" name = "cpf" id = "txCpf" class="form-control" placeholder="Digite seu CPF: apenas números"  maxlength="12">
                   <span class="input-group-btn">
                     <input class="btn btn-success" type="submit" value = "Entrar">Pesquisar/>
                   </span>
