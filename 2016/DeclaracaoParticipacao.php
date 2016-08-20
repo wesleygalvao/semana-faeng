@@ -122,7 +122,7 @@
               if($output == 0){ 
                 //Mensagem de alerta
                 $alert = '<div class="alert alert-danger"role="alert" align="center" >
-                Oops, CPF inválido. Tente novamente 
+                Oops, CPF inválido. Tente novamente com o seu RGA
                 <br>Algum problema na busca ou com o documento? Entre em contato com iisemanafaeng@gmail.com </div>';
                 echo $alert;               
               }else{ //Se algum CPF for encontrado
